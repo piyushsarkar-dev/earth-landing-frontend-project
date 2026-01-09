@@ -27,8 +27,10 @@ const Header = () => {
 
 	return (
 		<header
-			className={`bg-background fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
-				isScrolled ? "border-b shadow-sm" : "border-b-0 shadow-none"
+			className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
+				isScrolled
+					? "bg-background text-foreground border-b shadow-sm"
+					: "border-b-0 bg-transparent text-black shadow-none"
 			}`}
 			aria-label="app-header">
 			<div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
