@@ -1,7 +1,6 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import HamburgerMenu from "./HamburgerMenu";
@@ -24,19 +23,15 @@ const Header = () => {
 			<div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
 				<Link
 					href={"/"}
-					className="flex items-center gap-2">
-					<Image
-						src="/logo-header.png"
-						alt="logo"
-						width={200}
-						height={20}
-						className="h-auto w-auto"
-					/>
+					className="text flex items-center gap-2 text-3xl font-semibold tracking-widest">
+					<h1>EARTH STORE</h1>
 				</Link>
 
 				{/* Desktop Nav */}
-				<nav className="hidden items-center gap-4 md:flex">
-					<Link href={"/"}>Home</Link>
+				<nav className="hidden items-center gap-5 md:flex">
+					<Link href={"/"}>HOME</Link>
+					<Link href={"/"}>ABOUT</Link>
+					<Link href={"/"}>CONTACT</Link>
 					<Link
 						href={"https://github.com/piyushsarkar-dev"}
 						target="_blank"
@@ -72,7 +67,19 @@ const Header = () => {
 							href={"/"}
 							onClick={toggleMenu}
 							className="text-lg font-medium">
-							Home
+							HOME
+						</Link>
+						<Link
+							href={"/"}
+							onClick={toggleMenu}
+							className="text-lg font-medium">
+							ABOUT
+						</Link>
+						<Link
+							href={"/"}
+							onClick={toggleMenu}
+							className="text-lg font-medium">
+							CONTACT
 						</Link>
 						<Link
 							href={"https://github.com/piyushsarkar-dev"}
