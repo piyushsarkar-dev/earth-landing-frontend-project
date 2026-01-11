@@ -1,5 +1,6 @@
 import Header from "@/components/Header/Header";
 import ThemeProvider from "@/components/Providers/ThemeProvider";
+import WrapFooter from "@/components/WrapFooter";
 import type { Metadata } from "next";
 import { ReactNode } from "react";
 import "./globals.css";
@@ -27,8 +28,9 @@ const RootLayout = ({ children }: Readonly<RootLayoutProps>) => {
 					enableSystem={false}>
 					<Header />
 
-					<main className="mx-auto max-w-7xl px-6 py-3">{children}</main>
+					<main className="">{children}</main>
 				</ThemeProvider>
+				<WrapFooter />
 			</body>
 		</html>
 	);
