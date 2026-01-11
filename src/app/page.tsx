@@ -1,3 +1,4 @@
+import { Quote } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 
@@ -63,6 +64,84 @@ const page = () => {
 					<div className="text-gray-500">Posters</div>
 					<div className="text-lg font-bold uppercase">Poster V3</div>
 					<div className="font-semibold">₹251.00</div>
+				</div>
+			</section>
+			<section className="space-y-8 px-48 py-28">
+				<div className="text-5xl font-semibold uppercase">
+					What Our Customers Say
+				</div>
+
+				<div className="grid grid-cols-3 gap-28">
+					<div className="space-y-8">
+						<div className="">
+							Fast shipping and excellent customer service. The product was even
+							better than expected. I will definitely be a returning customer.
+						</div>
+
+						<div className="flex justify-between">
+							<div className="space-y-6">
+								<Image
+									src={"/avatar-1.jpeg"}
+									alt="avatar-1.jpeg"
+									width={40}
+									height={40}
+									className="aspect-square h-10 w-10 rounded-full"
+								/>
+
+								<div className="font-bold uppercase">Jennifer Lewis</div>
+							</div>
+
+							<Quote className="text-earth-light fill-earth-light" />
+						</div>
+					</div>
+
+					<div className="space-y-8">
+						<div className="">
+							Great user experience on your website. I found exactly what I was
+							looking for at a great price. I will definitely be telling my
+							friends.
+						</div>
+
+						<div className="flex justify-between">
+							<div className="space-y-6">
+								<Image
+									src={"/avatar-2.jpeg"}
+									alt="avatar-2.jpeg"
+									width={40}
+									height={40}
+									className="aspect-square h-10 w-10 rounded-full"
+								/>
+
+								<div className="font-bold uppercase">Alicia Heart</div>
+							</div>
+
+							<Quote className="text-earth-light fill-earth-light" />
+						</div>
+					</div>
+
+					<div className="space-y-8">
+						<div className="">
+							Thank you for the excellent shopping experience. It arrived
+							quickly and was exactly as described. I will definitely be
+							shopping with you again in the future.
+						</div>
+
+						<div className="flex justify-between">
+							<div className="space-y-6">
+								<Image
+									src={"/avatar-3.jpeg"}
+									alt="avatar-3.jpeg"
+									width={40}
+									height={40}
+									className="aspect-square h-10 w-10 rounded-full"
+								/>
+
+								<div className="font-bold uppercase">Juan Carlos</div>
+							</div>
+
+							<Quote className="text-earth-light fill-earth-light" />
+						</div>
+					</div>
 				</div>
 			</section>
 		</>
