@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
 	title: "Earth Store",
@@ -8,16 +7,8 @@ export const metadata: Metadata = {
 
 const page = () => {
 	return (
-		<section className="relative w-full">
-			<Image
-				src="/home-banner.jpg"
-				alt="Earth Store Banner"
-				width={1920}
-				height={1081}
-				priority
-				className="h-auto w-full"
-			/>
-			<div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 pt-16 text-center">
+		<section className="grid place-items-center bg-[url(/home-banner.jpg)] bg-cover bg-center py-64">
+			<div className="flex flex-col items-center justify-center space-y-4 text-center">
 				<h1 className="text-6xl font-bold tracking-wider text-[#2e5233] md:text-8xl">
 					EARTH
 				</h1>
