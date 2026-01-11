@@ -1,3 +1,4 @@
+import MainPostCard from "@/components/MainPostCard";
 import { Quote } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -144,6 +145,7 @@ const page = () => {
 					</div>
 				</div>
 			</section>
+			<MainPostCard />
 		</>
 	);
 };
