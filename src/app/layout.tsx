@@ -24,7 +24,7 @@ const RootLayout = ({ children }: Readonly<RootLayoutProps>) => {
 			<body>
 				<ThemeProvider
 					attribute={"class"}
-					defaultTheme="dark"
+					defaultTheme="light"
 					enableSystem={false}>
 					<Header />
 
