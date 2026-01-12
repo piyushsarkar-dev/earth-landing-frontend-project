@@ -1,5 +1,11 @@
 import MainPostCard from "@/components/MainPostCard";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+	title: "About | Planet Earth Store",
+	description: "About page of Planet Earth Store",
+};
 
 const page = () => {
 	return (
