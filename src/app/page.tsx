@@ -4,8 +4,8 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-	title: "Earth Store",
-	description: "Multipurpose Store",
+	title: "Home | Planet Earth Store",
+	description: "Home page of Planet Earth Store",
 };
 
 const page = () => {
