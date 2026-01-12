@@ -6,7 +6,7 @@ import { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-	title: "Next.js Frontend Template",
+	title: "Home | Planet Earth Store",
 	icons: {
 		icon: "/logo.png",
 	},
