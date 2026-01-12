@@ -44,7 +44,7 @@ const Header = () => {
 					{/* Desktop Nav */}
 					<nav className="hidden items-center gap-5 md:flex">
 						<Link href={"/"}>HOME</Link>
-						<Link href={"/"}>ABOUT</Link>
+						<Link href={"/about"}>ABOUT</Link>
 						<Link href={"/"}>CONTACT</Link>
 						<Link
 							href={"https://github.com/piyushsarkar-dev"}
@@ -85,7 +85,7 @@ const Header = () => {
 							HOME
 						</Link>
 						<Link
-							href={"/"}
+							href={"/about"}
 							onClick={toggleMenu}
 							className="text-lg font-medium">
 							ABOUT
