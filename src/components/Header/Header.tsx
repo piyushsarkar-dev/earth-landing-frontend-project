@@ -45,7 +45,7 @@ const Header = () => {
 					<nav className="hidden items-center gap-5 md:flex">
 						<Link href={"/"}>HOME</Link>
 						<Link href={"/about"}>ABOUT</Link>
-						<Link href={"/"}>CONTACT</Link>
+						<Link href={"/contact"}>CONTACT</Link>
 						<Link
 							href={"https://github.com/piyushsarkar-dev"}
 							target="_blank"
@@ -91,7 +91,7 @@ const Header = () => {
 							ABOUT
 						</Link>
 						<Link
-							href={"/"}
+							href={"/contact"}
 							onClick={toggleMenu}
 							className="text-lg font-medium">
 							CONTACT
